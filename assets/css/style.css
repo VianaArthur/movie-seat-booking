@@ -55,7 +55,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('images/matrix.jpg');
+  background-image: url('assets/images/matrix.jpg');
 }
 
 .seat {

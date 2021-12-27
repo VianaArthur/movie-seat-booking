@@ -19,7 +19,7 @@ const loadData = () => {
 
   const selectedMovieImg = localStorage.getItem('selectedMovieImg');
   if (selectedMovieImg !== null) {
-    movieCover.style.backgroundImage = `url(images/${selectedMovieImg}.jpg)`;
+    movieCover.style.backgroundImage = `url(assets/images/${selectedMovieImg}.jpg)`;
   }
 };
 
@@ -55,7 +55,7 @@ selectedMovie.addEventListener('change', (e) => {
   // change the movie image
   document.querySelector(
     '.movie-image'
-  ).style.backgroundImage = `url(images/${selectedOptionId}.jpg)`;
+  ).style.backgroundImage = `url(assets/images/${selectedOptionId}.jpg)`;
 
   ticketPrice = +e.target.value;
   setMovieData(e.target.selectedIndex, e.target.value, selectedOptionId);
