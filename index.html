@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Seletor de assentos de cinema</title>
+  </head>
+
+  <body>
+    <div class="movie-container">
+      <label>Escolha um filme:</label>
+
+      <select name="movie" id="movie">
+        <option id="matrix" value="15">Matrix (R$15)</option>
+        <option id="spider" value="10">Homem Aranha (R$10)</option>
+        <option id="spacejam" value="12">Space Jam (R$12)</option>
+        <option id="venom" value="9">Venom (R$9)</option>
+      </select>
+    </div>
+
+    <div class="main-content">
+      <div class="movie-image"></div>
+
+      <div class="selector">
+        <div class="container">
+          <div class="screen"></div>
+
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+          </div>
+
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+
+          <div class="row">
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+
+          <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+        </div>
+
+        <ul class="showcase">
+          <li>
+            <div class="seat"></div>
+            <small>Livre</small>
+          </li>
+          <li>
+            <div class="seat selected"></div>
+            <small>Selecionado</small>
+          </li>
+          <li>
+            <div class="seat occupied"></div>
+            <small>Ocupado</small>
+          </li>
+        </ul>
+      </div>
+
+      <div class="order-resume">
+        <h2>Resumo do Pedido</h2>
+
+        <div class="stack">
+          <div class="stack-item">
+            <p>Qnt. de ingressos</p>
+            <p id="count">0</p>
+          </div>
+
+          <div class="stack-item total">
+            <p>Total</p>
+            <p id="total">R$ 0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
