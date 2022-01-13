@@ -1,5 +1,3 @@
-
-
 # Seletor de assentos de cinema
  Aplicação simples para marcar assentos de cinema utilizando JavaScript puro.
  
